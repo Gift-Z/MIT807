@@ -1,4 +1,6 @@
 
+# A Domain-Specific Large Language Model for Diabetes Care and Management
+
 Last updated: November 2025
 
 ## Table of contents 
@@ -18,18 +20,17 @@ The final collected dataset consisted of 18,079 processed question-answer pairs 
 
 ## Methodology 
 This study adopted an experimental research design. The experimental research process is shown below, and consists of five phases. 
-
-![alt text](image-2.png)
-
+![alt text](image.png)
 
 ### Data Summary
 Available datasets contains two format types. The documents in pdf format as follows:
 
-![alt text](image-1.png)
+![alt text](image-2.png)
+
 
 And the question-answer pairs as follows with respective sources, as follows:
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ### Modelling Process
 
