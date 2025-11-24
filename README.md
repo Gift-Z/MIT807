@@ -45,24 +45,12 @@ The modelling process followed is experimental with steps.
     ├── Makefile
     ├── README.md
     ├── data
-    │   ├── raw           
-    │   ├── processed
-    │   └── extenal  
-    ├── docs
+    │   ├── raw - https://drive.google.com/drive/folders/1eShyb9G7LD5-NbVimE_U8r-varBXFrxA?usp=sharing         
+    │   ├── processed - Huggimg Face Gift-Z/UshukelaDiabetesTrainingData 
     ├── models
-    │   ├── archive
     │   ├── 01_GT_Functions.ipynb
     │   ├── 02_GT_FinalElephantIdentificationModel.ipynb
     │   ├── 03_GT_ValidateWithELPephantData.ipynb
-    │   ├── TG_App.py
-    │   └── yolo11n-seg.pt
-    ├── notebooks
-    │   ├── archive
-    │   ├── 01_GT_ImageProcessing.ipynb
-    │   ├── 02_GT_FeatureExtraction.ipynb
-    │   ├── 03_GT_EvaluatingResults.ipynb
-    ├── references
-    ├── ├── References.text
     ├── reports
     │   ├── figures
     │   ├── 01_GT_Project_Scoping_Worksheet.pdf
