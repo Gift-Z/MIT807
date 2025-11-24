@@ -113,11 +113,11 @@ The modelling process followed is experimental with steps.
 * [Final Elephant Identification](models/02_GT_FinalElephantIdentificationModel.ipynb) - running all activities associated with identifying an elephant from image processing, clustering and validation. This will load and process the images, extract features, calculate similarity score, find clusters and assign cluster names for the internal data
 * [Validate with ELPephants Data](models/03_GT_ValidateWithELPephantData.ipynb) - Used to eveluate the accuracy of the final elephant identification model
 
-### Usage of model
-
-1. Open the final model notebook [Final Elephant Identification](models/02_GT_FinalElephantIdentificationModel.ipynb)
-2. Run it on Google colab. 
-
+### Usage of model- Load model directly
+---
+from transformers import AutoModel
+model = AutoModel.from_pretrained("Gift-Z/UshukelaDiabetesLLM", dtype="auto")
+---
 
 ## Authors 
 -----------
