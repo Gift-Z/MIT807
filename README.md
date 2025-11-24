@@ -1,5 +1,5 @@
 
-# A Domain-Specific Large Language Model for Diabetes Care and Management
+# UshukelaDiabetesLLM - A Domain-Specific Large Language Model for Diabetes Care and Management
 
 Last updated: November 2025
 
