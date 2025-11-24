@@ -106,13 +106,6 @@ The modelling process followed is experimental with steps.
 
 **External**: Email Matthias Körschens <matthias.koerschens@uni-jena.de>  (Not required to run model)
 
-### After receiveing access, pin folders or create a shortcut in  My Drive
-
-### Modelling Notebooks
-* [Functions](models/01_GT_Functions.ipynb) - encompasing of all functions applicable functions. It an input script to the validation and final elephant id notebooks
-* [Final Elephant Identification](models/02_GT_FinalElephantIdentificationModel.ipynb) - running all activities associated with identifying an elephant from image processing, clustering and validation. This will load and process the images, extract features, calculate similarity score, find clusters and assign cluster names for the internal data
-* [Validate with ELPephants Data](models/03_GT_ValidateWithELPephantData.ipynb) - Used to eveluate the accuracy of the final elephant identification model
-
 ### Usage of model- Load model directly
 ---
 from transformers import AutoModel
