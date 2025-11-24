@@ -102,14 +102,23 @@ The modelling process followed is experimental with steps.
 
 **Raw**: [African Savanna Elephant Images](https://drive.google.com/drive/folders/1tY1UGVq3MqqHQNtRMvCzg8Jd5DQd1ekd?usp=drive_link), Email Heinrich van Deventer <heinrich.vandeventer@up.ac.za>
 
-**Processed**: [Processed Images and Features](https://drive.google.com/drive/folders/1SQljZdZshWlvMRVfzOAMalV3a9G5rkn4?usp=sharing)
+**Processed**: 
 
-**External**: Email Matthias Körschens <matthias.koerschens@uni-jena.de>  (Not required to run model)
+```
+from datasets import load_dataset
+training_df = load_dataset("Gift-Z/UshukelaDiabetesTrainingData")
+test_df = load_dataset("Gift-Z/UshukelaDiabetesTestData")
+
+```
 
 ### Usage of model- Load model directly
 
+```
+
 from transformers import AutoModel
 model = AutoModel.from_pretrained("Gift-Z/UshukelaDiabetesLLM", dtype="auto")
+
+```
 
 ## Authors 
 -----------
