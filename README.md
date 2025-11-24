@@ -107,10 +107,9 @@ The modelling process followed is experimental with steps.
 **External**: Email Matthias Körschens <matthias.koerschens@uni-jena.de>  (Not required to run model)
 
 ### Usage of model- Load model directly
----
+
 from transformers import AutoModel
 model = AutoModel.from_pretrained("Gift-Z/UshukelaDiabetesLLM", dtype="auto")
----
 
 ## Authors 
 -----------
