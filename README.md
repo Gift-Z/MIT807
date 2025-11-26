@@ -61,6 +61,8 @@ The modelling process followed is experimental with steps.
     │   │   ├── 02B_GZ_BioMedLM_QLoRA.ipynb
     │   │   ├── 03B_GZ_Qwen_QLoRA.ipynb
     │   ├── 03_Evaluation
+    │   │   ├── 01_GZ_Evaluating_Trained_Models.ipynb
+    │   │   ├── 02_GZ_Evaluating_Generated_Output.ipynb
     ├── reports
     │   ├── images
     │   ├── ......    
