@@ -81,8 +81,8 @@ The modelling process followed is experimental with steps.
 ### Request Data Access: 
 
 **Raw**: [All data, including PDFs, HTML, etc.](https://drive.google.com/drive/folders/1eShyb9G7LD5-NbVimE_U8r-varBXFrxA?usp=sharing)
+
 **Processed**: 
-Processed data: 
 - [Training](https://huggingface.co/datasets/Gift-Z/UshukelaDiabetesTrainingData)
 - [Testing](https://huggingface.co/datasets/Gift-Z/UshukelaDiabetesTestData)
   
