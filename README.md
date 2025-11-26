@@ -93,7 +93,7 @@ test_df = load_dataset("Gift-Z/UshukelaDiabetesTestData")
 
 ```
 
-### Usage of model- Load model directly
+### Usage of model - Load model directly
 
 ```
 
