@@ -41,8 +41,6 @@ The modelling process followed is experimental with steps.
 ## Project Organization
 ------------
 
-    ├── LICENSE
-    ├── Makefile
     ├── README.md
     ├── data
     │   ├── raw - https://drive.google.com/drive/folders/1eShyb9G7LD5-NbVimE_U8r-varBXFrxA?usp=sharing         
