@@ -46,33 +46,24 @@ The modelling process followed is experimental with steps.
     ├── README.md
     ├── data
     │   ├── raw - https://drive.google.com/drive/folders/1eShyb9G7LD5-NbVimE_U8r-varBXFrxA?usp=sharing         
-    │   ├── processed - Huggimg Face Gift-Z/UshukelaDiabetesTrainingData 
-    ├── models
-    │   ├── 01_GT_Functions.ipynb
-    │   ├── 02_GT_FinalElephantIdentificationModel.ipynb
-    │   ├── 03_GT_ValidateWithELPephantData.ipynb
+    │   ├── processed - Huggimg Face Gift-Z/UshukelaDiabetesTrainingData & Gift-Z/UshukelaDiabetesTestData
+    ├── notebooks
+    │   ├── 01_Data_Preprocessing
+    │   │   ├── 01_GZ_PDF_Extraction.ipynb
+    │   │   ├── 02_GZ_HTML_Extraction.ipynb
+    │   │   ├── 03_GZ_Custom_Data_Augmentation.ipynb
+    │   │   ├── 04_GZ_PubMed_Extraction.ipynb
+    │   │   ├── 05_GZ_Benchmark.ipynb
+    │   │   ├── 06_GZ_QA_Processing.ipynb
+    │   ├── 02_Training
+    │   │   ├── 01A_GZ_BioMistral_Prompt_Tuning.ipynb
+    │   │   ├── 01B_GZ_BioMistral_QLoRA.ipynb
+    │   │   ├── 02B_GZ_BioMedLM_QLoRA.ipynb
+    │   │   ├── 03B_GZ_Qwen_QLoRA.ipynb
+    │   ├── 03_Evaluation
     ├── reports
-    │   ├── figures
-    │   ├── 01_GT_Project_Scoping_Worksheet.pdf
-    │   ├── 02_GT_Exploratory_Data_Analysis.pdf
-    │   ├── 03_GT_Modelling_Report_MIT808t.pdf
-    │   ├── 04_GT_Visualisation_Report_MIT808.pdf
-    │   ├── 05_GT_Final_Report_MIT808 KDD.pdf
-    │   ├── 06_GT_Poster_MIT808.pdf
-    │   └── 07_GT_Presentation_MIT808.pdf
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   ├── GT_FinalElephantIdentificationModel.ipynb
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── TG_App.py
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-
-    
+    │   ├── images
+    │   ├── ......    
 
 --------
 
@@ -85,13 +76,16 @@ The modelling process followed is experimental with steps.
 - Python 3.12.12
 - Google Colab
 - Google Drive
+- Hugging Face
 
 ### Request Data Access: 
 
-**Raw**: [African Savanna Elephant Images](https://drive.google.com/drive/folders/1tY1UGVq3MqqHQNtRMvCzg8Jd5DQd1ekd?usp=drive_link), Email Heinrich van Deventer <heinrich.vandeventer@up.ac.za>
-
+**Raw**: [All data, including PDFs, HTML, etc.](https://drive.google.com/drive/folders/1eShyb9G7LD5-NbVimE_U8r-varBXFrxA?usp=sharing)
 **Processed**: 
-
+Processed data: 
+- [Training](https://huggingface.co/datasets/Gift-Z/UshukelaDiabetesTrainingData)
+- [Testing](https://huggingface.co/datasets/Gift-Z/UshukelaDiabetesTestData)
+  
 ```
 from datasets import load_dataset
 training_df = load_dataset("Gift-Z/UshukelaDiabetesTrainingData")
@@ -113,10 +107,3 @@ model = AutoModel.from_pretrained("Gift-Z/UshukelaDiabetesLLM", dtype="auto")
 
 * Written by : Gift Silinda
 * Contact details : u13292057@tuks.co.za
-
-
-## More Information 
----------
-
-The project is run in Google Colab as the modeling steps require multi-process and the data is on google drive with limited access to the only developers
-
