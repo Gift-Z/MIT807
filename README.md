@@ -23,7 +23,7 @@ This study adopted an experimental research design. The experimental research pr
 ![alt text](images/image.png)
 
 ### Data Summary
-Available datasets contains two format types. The documents in pdf format as follows:
+Available datasets contain two format types. The documents in pdf format as follows:
 
 ![alt text](images/image-2.png)
 
